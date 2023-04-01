@@ -9,14 +9,16 @@
     <table class="w3-table w3-stripped w3-bordered w3-margin-bottom">
         <tr class="w3-red">
             <th>Title</th>
-            <th>Date</th>
+            <th>Content</th>
+            <th>Date Learnt</th>
             <th></th>
             <th></th>
         </tr>
         <?php foreach($entries as $entry): ?>
             <tr>
                 <td>{{$entry->title}}</td>
-                <td>{{ \Carbon\Carbon::parse($entry->learned_at)->format('d/m/Y g:i A')}}</td>
+                <td>{{$entry->content}}</td>
+                <td>{{ \Carbon\Carbon::parse($entry->learnt_at)->format('d/m/Y')}}</td>
                 <td><a href="/console/entries/edit/{{$entry->id}}">Edit</a></td>
                 <td><a href="/console/entries/delete/{{$entry->id}}">Delete</a></td>
             </tr>

@@ -14,6 +14,12 @@ class EntriesController extends Controller
             'entries' => Entry::all()
         ]);
     }
+
+        public function addForm()
+    {
+
+        return view('entries.add');
+    }
     
     public function add()
     {
@@ -28,8 +34,6 @@ class EntriesController extends Controller
         $entry->title = $attributes['title'];
         $entry->content = $attributes['content'];
         $entry->learnt_at = $attributes['learnt_at'];
-
-        $entry->user_id = Auth::user()->id;
         $entry->save();
 
         return redirect('/console/entries/list')

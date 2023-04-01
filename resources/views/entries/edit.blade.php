@@ -31,8 +31,8 @@
         </div>
 
         <div class="w3-margin-bottom">
-            <label for="learnt_date">Date Learnt:</label>
-            <input type="datetime" name="learnt_date" id="learnt_date" value="{{old('learnt_at', $entry->learnt_at)}}" required>
+            <label for="learnt_at">Date Learnt:</label>
+            <input type="date" name="learnt_at" id="learnt_at" value="{{old('learnt_at', \Carbon\Carbon::parse($entry->learnt_at)->format('Y-m-d'))}}" required>
             
             @if ($errors->first('learnt_at'))
                 <br>

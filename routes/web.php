@@ -63,7 +63,7 @@ Route::get('/console/entries/list', [EntriesController::class, 'list'])->middlew
 Route::get('/console/entries/add', [EntriesController::class, 'addForm'])->middleware('auth');
 Route::post('/console/entries/add', [EntriesController::class, 'add'])->middleware('auth');
 Route::get('/console/entries/edit/{entry:id}', [EntriesController::class, 'editForm'])->where('entry', '[0-9]+')->middleware('auth');
-Route::post('/console/entries/edit/{entry:id}', [EntriessController::class, 'edit'])->where('entry', '[0-9]+')->middleware('auth');
+Route::post('/console/entries/edit/{entry:id}', [EntriesController::class, 'edit'])->where('entry', '[0-9]+')->middleware('auth');
 Route::get('/console/entries/delete/{entry:id}', [EntriesController::class, 'delete'])->where('entry', '[0-9]+')->middleware('auth');
 Route::get('/console/entries/image/{entry:id}', [EntriesController::class, 'imageForm'])->where('entry', '[0-9]+')->middleware('auth');
 Route::post('/console/entries/image/{entry:id}', [EntriesController::class, 'image'])->where('entry', '[0-9]+')->middleware('auth');

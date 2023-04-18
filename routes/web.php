@@ -6,6 +6,8 @@ use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\TypesController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\EntriesController;
+use App\Http\Controllers\EducationController;
+use App\Http\Controllers\EmploymentsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -67,3 +69,17 @@ Route::post('/console/entries/edit/{entry:id}', [EntriesController::class, 'edit
 Route::get('/console/entries/delete/{entry:id}', [EntriesController::class, 'delete'])->where('entry', '[0-9]+')->middleware('auth');
 Route::get('/console/entries/image/{entry:id}', [EntriesController::class, 'imageForm'])->where('entry', '[0-9]+')->middleware('auth');
 Route::post('/console/entries/image/{entry:id}', [EntriesController::class, 'image'])->where('entry', '[0-9]+')->middleware('auth');
+
+Route::get('/console/education/list', [EducationController::class, 'list'])->middleware('auth');
+Route::get('/console/education/add', [EducationController::class, 'addForm'])->middleware('auth');
+Route::post('/console/education/add', [EducationController::class, 'add'])->middleware('auth');
+Route::get('/console/education/edit/{education:id}', [EducationController::class, 'editForm'])->where('education', '[0-9]+')->middleware('auth');
+Route::post('/console/education/edit/{education:id}', [EducationController::class, 'edit'])->where('education', '[0-9]+')->middleware('auth');
+Route::get('/console/education/delete/{education:id}', [EducationController::class, 'delete'])->where('education', '[0-9]+')->middleware('auth');
+
+Route::get('/console/employments/list', [EmploymentsController::class, 'list'])->middleware('auth');
+Route::get('/console/employments/add', [EmploymentsController::class, 'addForm'])->middleware('auth');
+Route::post('/console/employments/add', [EmploymentsController::class, 'add'])->middleware('auth');
+Route::get('/console/employments/edit/{employment:id}', [EmploymentsController::class, 'editForm'])->where('employment', '[0-9]+')->middleware('auth');
+Route::post('/console/employments/edit/{employment:id}', [EmploymentsController::class, 'edit'])->where('employment', '[0-9]+')->middleware('auth');
+Route::get('/console/employments/delete/{employment:id}', [EmploymentsController::class, 'delete'])->where('employment', '[0-9]+')->middleware('auth');

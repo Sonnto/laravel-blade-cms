@@ -3,22 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Entry;
+use App\Models\Employment;
 
-class EntriesController extends Controller
+class EmploymentsController extends Controller
 {
-    //entries list
+    //employments list
         public function list()
     {
-        return view('entries.list', [
-            'entries' => Entry::all()
+        return view('employments.list', [
+            'employments' => Employment::all()
         ]);
     }
 
         public function addForm()
     {
 
-        return view('entries.add');
+        return view('employments.add');
     }
     
     public function add()
@@ -26,56 +26,64 @@ class EntriesController extends Controller
 
         $attributes = request()->validate([
             'title' => 'required',
+            'employer' => 'required',
+            'started_at' => 'required',
+            'ended_at' => 'required',
             'content' => 'required',
-            'learnt_at' => 'required',
         ]);
 
-        $entry = new Entry();
-        $entry->title = $attributes['title'];
-        $entry->content = $attributes['content'];
-        $entry->learnt_at = $attributes['learnt_at'];
-        $entry->save();
+        $employment = new Employment();
+        $employment->title = $attributes['title'];
+        $employment->employer = $attributes['employer'];
+        $employment->started_at = $attributes['started_at'];
+        $employment->ended_at = $attributes['ended_at'];
+        $employment->content = $attributes['content'];
+        $employment->save();
 
-        return redirect('/console/entries/list')
-            ->with('message', 'Entry has been added!');
+        return redirect('/console/employments/list')
+            ->with('message', 'Employment has been added!');
     }
 
-    public function editForm(Entry $entry)
+    public function editForm(Employment $employment)
     {
-        return view('entries.edit', [
-            'entry' => $entry,
+        return view('employments.edit', [
+            'employment' => $employment,
         ]);
     }
 
-    public function edit(Entry $entry)
+    public function edit(Employment $employment)
     {
 
         $attributes = request()->validate([
             'title' => 'required',
+            'employer' => 'required',
+            'started_at' => 'required',
+            'ended_at' => 'required',
             'content' => 'required',
-            'learnt_at' => 'required',
         ]);
 
-        $entry->title = $attributes['title'];
-        $entry->content = $attributes['content'];
-        $entry->learnt_at = $attributes['learnt_at'];
-        $entry->save();
+        $employment->title = $attributes['title'];
+        $employment->employer = $attributes['employer'];
+        $employment->started_at = $attributes['started_at'];
+        $employment->ended_at = $attributes['ended_at'];
+        $employment->content = $attributes['content'];
+        $employment->save();
 
-        return redirect('/console/entries/list')
-            ->with('message', 'Entry has been edited!');
+        return redirect('/console/employments/list')
+            ->with('message', 'Employment has been edited!');
     }
 
-    public function delete(Entry $entry)
+    public function delete(Employment $employment)
     {
 
-        if($entry->image)
+        if($employment->image)
         {
-            Storage::delete($entry->image);
+            Storage::delete($employment->image);
         }
         
-        $entry->delete();
+        $employment->delete();
         
-        return redirect('/console/entries/list')
-            ->with('message', 'Entry has been deleted!');        
+        return redirect('/console/employments/list')
+            ->with('message', 'Employment has been deleted!');        
     }
 }

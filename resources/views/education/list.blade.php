@@ -16,20 +16,20 @@
             <th></th>
             <th></th>
         </tr>
-        <?php foreach($eudcation as $education): ?>
+        <?php foreach($education as $education): ?>
             <tr>
                 <td>{{$education->institute}}</td>
                 <td>{{$education->qualification}}</td>
                 <td>{{ \Carbon\Carbon::parse($education->started_at)->format('d/m/Y')}}</td>
                 <td>{{ \Carbon\Carbon::parse($education->ended_at)->format('d/m/Y')}}</td>
                 <td>{{$education->content}}</td>
-                <td><a href="/console/eudcation/edit/{{$education->id}}">Edit</a></td>
-                <td><a href="/console/eudcation/delete/{{$education->id}}">Delete</a></td>
+                <td><a href="/console/education/edit/{{$education->id}}">Edit</a></td>
+                <td><a href="/console/education/delete/{{$education->id}}">Delete</a></td>
             </tr>
         <?php endforeach; ?>
     </table>
 
-    <a href="/console/eudcation/add" class="w3-button w3-green">New Education</a>
+    <a href="/console/education/add" class="w3-button w3-green">New Education</a>
 
 </section>
 

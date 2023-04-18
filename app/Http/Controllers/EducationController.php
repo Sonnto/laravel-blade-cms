@@ -3,79 +3,87 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Entry;
+use App\Models\Education;
 
-class EntriesController extends Controller
+class EducationController extends Controller
 {
-    //entries list
+    //education list
         public function list()
     {
-        return view('entries.list', [
-            'entries' => Entry::all()
+        return view('education.list', [
+            'education' => Education::all()
         ]);
     }
 
         public function addForm()
     {
 
-        return view('entries.add');
+        return view('Education.add');
     }
     
     public function add()
     {
 
         $attributes = request()->validate([
-            'title' => 'required',
+            'institute' => 'required',
+            'qualification' => 'required',
+            'started_at' => 'required',
+            'ended_at' => 'requried',
             'content' => 'required',
-            'learnt_at' => 'required',
         ]);
 
-        $entry = new Entry();
-        $entry->title = $attributes['title'];
-        $entry->content = $attributes['content'];
-        $entry->learnt_at = $attributes['learnt_at'];
-        $entry->save();
+        $education = new Education();
+        $education->institute = $attributes['institute'];
+        $education->qualification = $attributes['qualification'];
+        $education->started_at = $attributes['started_at'];
+        $education->ended_at = $attributes['ended_at'];
+        $education->content = $attributes['content'];
+        $education->save();
 
-        return redirect('/console/entries/list')
-            ->with('message', 'Entry has been added!');
+        return redirect('/console/education/list')
+            ->with('message', 'Education has been added!');
     }
 
-    public function editForm(Entry $entry)
+    public function editForm(Education $education)
     {
-        return view('entries.edit', [
-            'entry' => $entry,
+        return view('education.edit', [
+            'education' => $education,
         ]);
     }
 
-    public function edit(Entry $entry)
+    public function edit(Education $education)
     {
 
         $attributes = request()->validate([
-            'title' => 'required',
+            'institute' => 'required',
+            'qualification' => 'required',
+            'started_at' => 'required',
+            'ended_at' => 'requried',
             'content' => 'required',
-            'learnt_at' => 'required',
         ]);
 
-        $entry->title = $attributes['title'];
-        $entry->content = $attributes['content'];
-        $entry->learnt_at = $attributes['learnt_at'];
-        $entry->save();
+        $education->institute = $attributes['institute'];
+        $education->qualification = $attributes['qualification'];
+        $education->started_at = $attributes['started_at'];
+        $education->ended_at = $attributes['ended_at'];
+        $education->content = $attributes['content'];
+        $education->save();
 
-        return redirect('/console/entries/list')
-            ->with('message', 'Entry has been edited!');
+        return redirect('/console/education/list')
+            ->with('message', 'Education has been edited!');
     }
 
-    public function delete(Entry $entry)
+    public function delete(Education $education)
     {
 
-        if($entry->image)
+        if($education->image)
         {
-            Storage::delete($entry->image);
+            Storage::delete($education->image);
         }
         
-        $entry->delete();
+        $education->delete();
         
-        return redirect('/console/entries/list')
-            ->with('message', 'Entry has been deleted!');        
+        return redirect('/console/education/list')
+            ->with('message', 'Education has been deleted!');        
     }
 }

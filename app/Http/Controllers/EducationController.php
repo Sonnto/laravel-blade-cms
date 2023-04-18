@@ -18,7 +18,7 @@ class EducationController extends Controller
         public function addForm()
     {
 
-        return view('Education.add');
+        return view('education.add');
     }
     
     public function add()

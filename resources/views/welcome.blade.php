@@ -1,4 +1,4 @@
-@extends ('layout.frontend', ['title' => 'Home'])
+@extends ('layout.frontend', ['title' => 'Anthony Ho | Full-Stack Developer'])
 
 @section ('content')
 

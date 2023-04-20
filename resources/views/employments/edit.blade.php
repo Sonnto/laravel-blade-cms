@@ -4,15 +4,15 @@
 
 <section class="w3-padding">
 
-    <h2>Edit Entry</h2>
+    <h2>Edit Employment</h2>
 
-    <form method="post" action="/console/entries/edit/{{$entry->id}}" novalidate class="w3-margin-bottom">
+    <form method="post" action="/console/employments/edit/{{$employment->id}}" novalidate class="w3-margin-bottom">
 
         @csrf
 
         <div class="w3-margin-bottom">
             <label for="title">Title:</label>
-            <input type="title" name="title" id="title" value="{{old('title', $entry->title)}}" required>
+            <input type="title" name="title" id="title" value="{{old('title', $employment->title)}}" required>
             
             @if ($errors->first('title'))
                 <br>
@@ -21,8 +21,38 @@
         </div>
 
         <div class="w3-margin-bottom">
+            <label for="employer">Employer:</label>
+            <input type="employer" name="employer" id="employer" value="{{old('employer', $employment->employer)}}" required>
+            
+            @if ($errors->first('employer'))
+                <br>
+                <span class="w3-text-red">{{$errors->first('employer')}}</span>
+            @endif
+        </div>
+
+        <div class="w3-margin-bottom">
+            <label for="started_at">Start Date:</label>
+            <input type="date" name="started_at" id="started_at" value="{{old('started_at', \Carbon\Carbon::parse($employment->started_at)->format('Y-m-d'))}}" required>
+            
+            @if ($errors->first('started_at'))
+                <br>
+                <span class="w3-text-red">{{$errors->first('started_at')}}</span>
+            @endif
+        </div>
+
+        <div class="w3-margin-bottom">
+            <label for="ended_at">End Date:</label>
+            <input type="date" name="ended_at" id="ended_at" value="{{old('ended_at', \Carbon\Carbon::parse($employment->ended_at)->format('Y-m-d'))}}" required>
+            
+            @if ($errors->first('ended_at'))
+                <br>
+                <span class="w3-text-red">{{$errors->first('ended_at')}}</span>
+            @endif
+        </div>
+
+        <div class="w3-margin-bottom">
             <label for="content">Content:</label>
-            <textarea name="content" id="content" required>{{old('content', $entry->content)}}</textarea>
+            <textarea name="content" id="content" required>{{old('content', $employment->content)}}</textarea>
 
             @if ($errors->first('content'))
                 <br>
@@ -30,21 +60,11 @@
             @endif
         </div>
 
-        <div class="w3-margin-bottom">
-            <label for="learnt_at">Date Learnt:</label>
-            <input type="date" name="learnt_at" id="learnt_at" value="{{old('learnt_at', \Carbon\Carbon::parse($entry->learnt_at)->format('Y-m-d'))}}" required>
-            
-            @if ($errors->first('learnt_at'))
-                <br>
-                <span class="w3-text-red">{{$errors->first('learnt_at')}}</span>
-            @endif
-        </div>
-
-        <button type="submit" class="w3-button w3-green">Edit Entry</button>
+        <button type="submit" class="w3-button w3-green">Edit Employment</button>
 
     </form>
 
-    <a href="/console/entries/list">Back to Entry List</a>
+    <a href="/console/employments/list">Back to Employment List</a>
 
 </section>
 

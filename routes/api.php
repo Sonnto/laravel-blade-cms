@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Type;
 use App\Models\User;
 use App\Models\Project;
+use App\Models\Education;
+use App\Models\Employment;
 
 /*
 |--------------------------------------------------------------------------

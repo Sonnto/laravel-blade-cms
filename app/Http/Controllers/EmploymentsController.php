@@ -27,6 +27,7 @@ class EmploymentsController extends Controller
         $attributes = request()->validate([
             'title' => 'required',
             'employer' => 'required',
+            'location' => 'required',
             'started_at' => 'required',
             'ended_at' => 'required',
             'content' => 'required',
@@ -35,6 +36,7 @@ class EmploymentsController extends Controller
         $employment = new Employment();
         $employment->title = $attributes['title'];
         $employment->employer = $attributes['employer'];
+        $employment->location = $attributes['location'];
         $employment->started_at = $attributes['started_at'];
         $employment->ended_at = $attributes['ended_at'];
         $employment->content = $attributes['content'];
@@ -57,6 +59,7 @@ class EmploymentsController extends Controller
         $attributes = request()->validate([
             'title' => 'required',
             'employer' => 'required',
+            'location' => 'required',
             'started_at' => 'required',
             'ended_at' => 'required',
             'content' => 'required',
@@ -64,6 +67,7 @@ class EmploymentsController extends Controller
 
         $employment->title = $attributes['title'];
         $employment->employer = $attributes['employer'];
+        $employment->location = $attributes['location'];
         $employment->started_at = $attributes['started_at'];
         $employment->ended_at = $attributes['ended_at'];
         $employment->content = $attributes['content'];

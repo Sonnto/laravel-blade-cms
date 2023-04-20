@@ -19,6 +19,7 @@ class EmploymentFactory extends Factory
         return [
             'title' => $this->faker->sentence,
             'employer' => $this->faker->sentence,
+            'location' => $this->faker->sentence,
             'started_at' => $this->faker->dateTimeThisMonth,
             'ended_at' => $this->faker->dateTimeThisMonth,
             'content' => $this->faker->paragraph,

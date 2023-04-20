@@ -31,6 +31,16 @@
         </div>
 
         <div class="w3-margin-bottom">
+            <label for="location">Location:</label>
+            <input type="location" name="location" id="location" value="{{old('location', $employment->location)}}" required>
+            
+            @if ($errors->first('location'))
+                <br>
+                <span class="w3-text-red">{{$errors->first('location')}}</span>
+            @endif
+        </div>
+
+        <div class="w3-margin-bottom">
             <label for="started_at">Start Date:</label>
             <input type="date" name="started_at" id="started_at" value="{{old('started_at', \Carbon\Carbon::parse($employment->started_at)->format('Y-m-d'))}}" required>
             

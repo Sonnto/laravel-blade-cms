@@ -10,6 +10,7 @@
         <tr class="w3-red">
             <th>Title</th>
             <th>Employer</th>
+            <th>Location</th>
             <th>Start Date</th>
             <th>End Date</th>
             <th>Content</th>
@@ -20,6 +21,7 @@
             <tr>
                 <td>{{$employment->title}}</td>
                 <td>{{$employment->employer}}</td>
+                <td>{{$employment->location}}</td>
                 <td>{{ \Carbon\Carbon::parse($employment->started_at)->format('d/m/Y')}}</td>
                 <td>{{ \Carbon\Carbon::parse($employment->ended_at)->format('d/m/Y')}}</td>
                 <td>{{$employment->content}}</td>

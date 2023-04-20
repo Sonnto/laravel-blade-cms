@@ -21,12 +21,22 @@
         </div>
 
         <div class="w3-margin-bottom">
-            <label for="url">URL:</label>
+            <label for="url">Github URL:</label>
             <input type="url" name="url" id="url" value="{{old('url', $project->url)}}">
 
             @if ($errors->first('url'))
                 <br>
                 <span class="w3-text-red">{{$errors->first('url')}}</span>
+            @endif
+        </div>
+
+        <div class="w3-margin-bottom">
+            <label for="urlTest">Test Project URL:</label>
+            <input type="urlTest" name="urlTest" id="urlTest" value="{{old('urlTest', $project->urlTest)}}">
+
+            @if ($errors->first('urlTest'))
+                <br>
+                <span class="w3-text-red">{{$errors->first('urlTest')}}</span>
             @endif
         </div>
 

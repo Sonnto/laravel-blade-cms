@@ -23,7 +23,13 @@
                 <td>{{$education->qualification}}</td>
                 <td>{{$education->location}}</td>
                 <td>{{ \Carbon\Carbon::parse($education->started_at)->format('d/m/Y')}}</td>
-                <td>{{ \Carbon\Carbon::parse($education->ended_at)->format('d/m/Y')}}</td>
+                <td>
+                    @if ($education->ended_at != 'Present')
+                        {{ \Carbon\Carbon::parse($education->ended_at)->format('d/m/Y')}}
+                    @else
+                        {{$education->ended_at}}
+                    @endif
+                </td>
                 <td>{{$education->content}}</td>
                 <td><a href="/console/education/edit/{{$education->id}}">Edit</a></td>
                 <td><a href="/console/education/delete/{{$education->id}}">Delete</a></td>

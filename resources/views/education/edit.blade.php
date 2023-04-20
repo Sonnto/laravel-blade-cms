@@ -52,8 +52,7 @@
 
         <div class="w3-margin-bottom">
             <label for="ended_at">End Date:</label>
-            <input type="date" name="ended_at" id="ended_at" value="{{old('ended_at', \Carbon\Carbon::parse($education->ended_at)->format('Y-m-d'))}}" required>
-            
+            <input type="date" name="ended_at" id="ended_at" value="{{old('ended_at', \Carbon\Carbon::parse($education->ended_at)->format('Y-m-d'))}}">
             @if ($errors->first('ended_at'))
                 <br>
                 <span class="w3-text-red">{{$errors->first('ended_at')}}</span>

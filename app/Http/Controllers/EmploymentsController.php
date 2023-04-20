@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Employment;
+use Illuminate\Support\Carbon;
 
 class EmploymentsController extends Controller
 {
@@ -11,7 +12,10 @@ class EmploymentsController extends Controller
         public function list()
     {
         return view('employments.list', [
-            'employments' => Employment::all()
+            'employments' => Employment::all()->map(function ($employments) {
+                $endDate = $employments->ended_at ? Carbon::parse($employments->ended_at)->format('M. Y') : 'Present';
+                return $employments->setAttribute('ended_at', $endDate);
+            })
         ]);
     }
 
@@ -29,7 +33,7 @@ class EmploymentsController extends Controller
             'employer' => 'required',
             'location' => 'required',
             'started_at' => 'required',
-            'ended_at' => 'required',
+            'ended_at' => 'nullable|date',
             'content' => 'required',
         ]);
 
@@ -61,7 +65,7 @@ class EmploymentsController extends Controller
             'employer' => 'required',
             'location' => 'required',
             'started_at' => 'required',
-            'ended_at' => 'required',
+            'ended_at' => 'nullable|date',
             'content' => 'required',
         ]);
 

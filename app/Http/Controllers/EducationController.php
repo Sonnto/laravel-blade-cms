@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Education;
+use Illuminate\Support\Carbon;
 
 class EducationController extends Controller
 {
@@ -11,7 +12,10 @@ class EducationController extends Controller
         public function list()
     {
         return view('education.list', [
-            'education' => Education::all()
+            'education' => Education::all()->map(function ($education) {
+                $endDate = $education->ended_at ? Carbon::parse($education->ended_at)->format('M. Y') : 'Present';
+                return $education->setAttribute('ended_at', $endDate);
+            })
         ]);
     }
 
@@ -29,7 +33,7 @@ class EducationController extends Controller
             'qualification' => 'required',
             'location' => 'required',
             'started_at' => 'required',
-            'ended_at' => 'required',
+            'ended_at' => 'nullable|date',
             'content' => 'required',
         ]);
 
@@ -61,7 +65,7 @@ class EducationController extends Controller
             'qualification' => 'required',
             'location' => 'required',
             'started_at' => 'required',
-            'ended_at' => 'required',
+            'ended_at' => 'nullable|date',
             'content' => 'required',
         ]);
 

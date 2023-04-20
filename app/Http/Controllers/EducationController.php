@@ -27,6 +27,7 @@ class EducationController extends Controller
         $attributes = request()->validate([
             'institute' => 'required',
             'qualification' => 'required',
+            'location' => 'required',
             'started_at' => 'required',
             'ended_at' => 'required',
             'content' => 'required',
@@ -35,6 +36,7 @@ class EducationController extends Controller
         $education = new Education();
         $education->institute = $attributes['institute'];
         $education->qualification = $attributes['qualification'];
+        $education->location = $attributes['location'];
         $education->started_at = $attributes['started_at'];
         $education->ended_at = $attributes['ended_at'];
         $education->content = $attributes['content'];
@@ -57,6 +59,7 @@ class EducationController extends Controller
         $attributes = request()->validate([
             'institute' => 'required',
             'qualification' => 'required',
+            'location' => 'required',
             'started_at' => 'required',
             'ended_at' => 'required',
             'content' => 'required',
@@ -64,6 +67,7 @@ class EducationController extends Controller
 
         $education->institute = $attributes['institute'];
         $education->qualification = $attributes['qualification'];
+        $education->location = $attributes['location'];
         $education->started_at = $attributes['started_at'];
         $education->ended_at = $attributes['ended_at'];
         $education->content = $attributes['content'];

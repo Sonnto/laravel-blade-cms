@@ -10,6 +10,7 @@
         <tr class="w3-red">
             <th>Institute</th>
             <th>Qualification</th>
+            <th>Location</th>
             <th>Start Date</th>
             <th>End Date</th>
             <th>Content</th>
@@ -20,6 +21,7 @@
             <tr>
                 <td>{{$education->institute}}</td>
                 <td>{{$education->qualification}}</td>
+                <td>{{$education->location}}</td>
                 <td>{{ \Carbon\Carbon::parse($education->started_at)->format('d/m/Y')}}</td>
                 <td>{{ \Carbon\Carbon::parse($education->ended_at)->format('d/m/Y')}}</td>
                 <td>{{$education->content}}</td>

@@ -4,25 +4,55 @@
 
 <section class="w3-padding">
 
-    <h2>Edit Entry</h2>
+    <h2>Edit Education</h2>
 
-    <form method="post" action="/console/entries/edit/{{$entry->id}}" novalidate class="w3-margin-bottom">
+    <form method="post" action="/console/education/edit/{{$education->id}}" novalidate class="w3-margin-bottom">
 
         @csrf
 
         <div class="w3-margin-bottom">
-            <label for="title">Title:</label>
-            <input type="title" name="title" id="title" value="{{old('title', $entry->title)}}" required>
+            <label for="institute">Institute:</label>
+            <input type="institute" name="institute" id="institute" value="{{old('institute', $education->institute)}}" required>
             
-            @if ($errors->first('title'))
+            @if ($errors->first('institute'))
                 <br>
-                <span class="w3-text-red">{{$errors->first('title')}}</span>
+                <span class="w3-text-red">{{$errors->first('institute')}}</span>
+            @endif
+        </div>
+
+        <div class="w3-margin-bottom">
+            <label for="qualification">Qualification:</label>
+            <input type="qualification" name="qualification" id="qualification" value="{{old('qualification', $education->qualification)}}" required>
+            
+            @if ($errors->first('qualification'))
+                <br>
+                <span class="w3-text-red">{{$errors->first('qualification')}}</span>
+            @endif
+        </div>
+
+        <div class="w3-margin-bottom">
+            <label for="started_at">Start Date:</label>
+            <input type="date" name="started_at" id="started_at" value="{{old('started_at', \Carbon\Carbon::parse($education->started_at)->format('Y-m-d'))}}" required>
+            
+            @if ($errors->first('started_at'))
+                <br>
+                <span class="w3-text-red">{{$errors->first('started_at')}}</span>
+            @endif
+        </div>
+
+        <div class="w3-margin-bottom">
+            <label for="ended_at">End Date:</label>
+            <input type="date" name="ended_at" id="ended_at" value="{{old('ended_at', \Carbon\Carbon::parse($education->ended_at)->format('Y-m-d'))}}" required>
+            
+            @if ($errors->first('ended_at'))
+                <br>
+                <span class="w3-text-red">{{$errors->first('ended_at')}}</span>
             @endif
         </div>
 
         <div class="w3-margin-bottom">
             <label for="content">Content:</label>
-            <textarea name="content" id="content" required>{{old('content', $entry->content)}}</textarea>
+            <textarea name="content" id="content" required>{{old('content', $education->content)}}</textarea>
 
             @if ($errors->first('content'))
                 <br>
@@ -30,21 +60,11 @@
             @endif
         </div>
 
-        <div class="w3-margin-bottom">
-            <label for="learnt_at">Date Learnt:</label>
-            <input type="date" name="learnt_at" id="learnt_at" value="{{old('learnt_at', \Carbon\Carbon::parse($entry->learnt_at)->format('Y-m-d'))}}" required>
-            
-            @if ($errors->first('learnt_at'))
-                <br>
-                <span class="w3-text-red">{{$errors->first('learnt_at')}}</span>
-            @endif
-        </div>
-
-        <button type="submit" class="w3-button w3-green">Edit Entry</button>
+        <button type="submit" class="w3-button w3-green">Edit Education</button>
 
     </form>
 
-    <a href="/console/entries/list">Back to Entry List</a>
+    <a href="/console/education/list">Back to Education List</a>
 
 </section>
 

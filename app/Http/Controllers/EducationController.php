@@ -44,6 +44,7 @@ class EducationController extends Controller
         $education->started_at = $attributes['started_at'];
         $education->ended_at = $attributes['ended_at'];
         $education->content = $attributes['content'];
+        $employment->user_id = Auth::user()->id;
         $education->save();
 
         return redirect('/console/education/list')

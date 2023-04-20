@@ -23,7 +23,13 @@
                 <td>{{$employment->employer}}</td>
                 <td>{{$employment->location}}</td>
                 <td>{{ \Carbon\Carbon::parse($employment->started_at)->format('d/m/Y')}}</td>
-                <td>{{ \Carbon\Carbon::parse($employment->ended_at)->format('d/m/Y')}}</td>
+                <td>
+                    @if ($employment->ended_at != 'Present')
+                        {{ \Carbon\Carbon::parse($employment->ended_at)->format('d/m/Y')}}
+                    @else
+                        {{$employment->ended_at}}
+                    @endif
+                </td>
                 <td>{{$employment->content}}</td>
                 <td><a href="/console/employments/edit/{{$employment->id}}">Edit</a></td>
                 <td><a href="/console/employments/delete/{{$employment->id}}">Delete</a></td>

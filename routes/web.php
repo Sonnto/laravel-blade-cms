@@ -1,6 +1,8 @@
 <?php
 
 use App\Models\Project;
+use App\Models\Education;
+use App\Models\Employment;
 use App\Http\Controllers\ConsoleController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\TypesController;

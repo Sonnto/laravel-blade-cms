@@ -32,7 +32,7 @@
         
         <div class="w3-margin-bottom">
             <label for="location">Location:</label>
-            <input type="location" name="location" id="location" value="{{old('location')'}}" required>
+            <input type="location" name="location" id="location" value="{{old('location')}}" required>
             
             @if ($errors->first('location'))
                 <br>
@@ -52,7 +52,7 @@
 
         <div class="w3-margin-bottom">
             <label for="ended_at">End Date:</label>
-            <input type="date" name="ended_at" id="ended_at" value="{{old('ended_at')}}" required>
+            <input type="date" name="ended_at" id="ended_at" value="{{old('ended_at')}}">
             
             @if ($errors->first('ended_at'))
                 <br>

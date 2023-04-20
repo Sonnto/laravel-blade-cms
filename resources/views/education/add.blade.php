@@ -52,7 +52,7 @@
 
         <div class="w3-margin-bottom">
             <label for="ended_at">End Date:</label>
-            <input type="date" name="ended_at" id="ended_at" value="{{old('ended_at')}}" required>
+            <input type="date" name="ended_at" id="ended_at" value="{{old('ended_at')}}">
             
             @if ($errors->first('ended_at'))
                 <br>

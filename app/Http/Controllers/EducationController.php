@@ -28,7 +28,7 @@ class EducationController extends Controller
             'institute' => 'required',
             'qualification' => 'required',
             'started_at' => 'required',
-            'ended_at' => 'requried',
+            'ended_at' => 'required',
             'content' => 'required',
         ]);
 
@@ -58,7 +58,7 @@ class EducationController extends Controller
             'institute' => 'required',
             'qualification' => 'required',
             'started_at' => 'required',
-            'ended_at' => 'requried',
+            'ended_at' => 'required',
             'content' => 'required',
         ]);
 

@@ -51,30 +51,24 @@ Route::get('/projects', function(){
 });
 
 Route::get('/education', function(){
-
-    $education = Education::orderBy('created_at')->get();
-
-    foreach($education as $key => $education)
-    {
-        $education[$key]['user'] = User::where('id', $education['user_id'])->first();
-    }
+    $education = Education::orderByRaw("CASE WHEN ended_at IS NULL THEN 0 ELSE 1 END")
+                    ->orderBy('ended_at', 'desc')
+                    ->orderBy('started_at', 'desc')
+                    ->get();
 
     return $education;
-
 });
+
 
 Route::get('/employments', function(){
-
-    $employments = Employment::orderBy('created_at')->get();
-
-    foreach($employments as $key => $employment)
-    {
-        $employments[$key]['user'] = User::where('id', $employment['user_id'])->first();
-    }
+    $employments = Employment::orderByRaw("CASE WHEN ended_at IS NULL THEN 0 ELSE 1 END")
+                    ->orderBy('ended_at', 'desc')
+                    ->orderBy('started_at', 'desc')
+                    ->get();
 
     return $employments;
-
 });
+
 
 Route::get('/projects/profile/{project?}', function(Project $project){
 

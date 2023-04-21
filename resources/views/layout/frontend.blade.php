@@ -42,11 +42,8 @@
       </nav>
     </header>
 
-<hr>
 
 @yield('content')
-
-<hr>
 
 <footer id="footer">
 

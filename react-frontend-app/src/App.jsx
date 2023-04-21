@@ -21,17 +21,17 @@ function App() {
                 console.log(error);
             }
         };
-        fetchData("projects", setProjects);
-        fetchData("education", setEducation);
         fetchData("employments", setEmployments);
+        fetchData("education", setEducation);
+        fetchData("projects", setProjects);
     }, []);
 
     //Resume section
     //Employment data
-    let employmentsArray = [];
+    let employmentArray = [];
     if (projects) {
         for (let i = 0; i < employments.length; i++) {
-            employmentsArray.push(<Employment data={employments[i]} />);
+            employmentArray.push(<Employment data={employments[i]} />);
         }
     }
 
@@ -44,24 +44,22 @@ function App() {
     }
 
     //Project data
-    let projectsArray = [];
+    let projectArray = [];
     if (projects) {
         for (let i = 0; i < projects.length; i++) {
-            projectsArray.push(<Project data={projects[i]} />);
+            projectArray.push(<Project data={projects[i]} />);
         }
     }
 
     return (
         <>
             <section id="resume" className="resume=container">
-                {employmentsArray}
+                {employmentArray}
                 {educationArray}
             </section>
             <section id="projects" className="projects-container">
                 <h2 className="section-heading">Projects</h2>
-                <div className="projects-content-container">
-                    {projectsArray}
-                </div>
+                <div className="projects-content-container">{projectArray}</div>
             </section>
         </>
     );

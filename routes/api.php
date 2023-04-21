@@ -50,6 +50,32 @@ Route::get('/projects', function(){
 
 });
 
+Route::get('/education', function(){
+
+    $education = Education::orderBy('created_at')->get();
+
+    foreach($education as $key => $education)
+    {
+        $education[$key]['user'] = User::where('id', $education['user_id'])->first();
+    }
+
+    return $education;
+
+});
+
+Route::get('/employments', function(){
+
+    $employments = Employment::orderBy('created_at')->get();
+
+    foreach($employments as $key => $employment)
+    {
+        $employments[$key]['user'] = User::where('id', $employment['user_id'])->first();
+    }
+
+    return $employments;
+
+});
+
 Route::get('/projects/profile/{project?}', function(Project $project){
 
     $project['user'] = User::where('id', $project['user_id'])->first();

@@ -104,7 +104,13 @@
       @foreach ($education as $edu)
         <h3 class="experience-name">{{$edu->institute}}</h3>
         <h4>{{$edu->location}}</h4>
-        <h4>{{date('M. Y', strtotime($edu->started_at))}} - {{date('M. Y', strtotime($edu->ended_at))}}</h4>
+        <h4>{{ date('M Y', strtotime($edu->started_at)) }}
+            @if($edu->ended_at)
+                - {{ date('M Y', strtotime($edu->ended_at)) }}
+            @else
+                - Present
+            @endif
+        </h4>
         <h4>{{$edu->qualification}}</h4>
         <ul>
           @foreach(explode(';', $edu->content) as $bullet)
@@ -117,7 +123,13 @@
         <h3 class="experience-name">{{$employment->title}}</h3>
         <h3 class="experience-name">{{$employment->employer}}</h3>
         <h4>{{$employment->location}}</h4>
-        <h4>{{date('M. Y', strtotime($employment->started_at))}} - {{date('M. Y', strtotime($employment->ended_at))}}</h4>
+        <h4>{{ date('M Y', strtotime($employment->started_at)) }}
+            @if($employment->ended_at)
+                - {{ date('M Y', strtotime($employment->ended_at)) }}
+            @else
+                - Present
+            @endif
+        </h4>
         <ul>
           @foreach(explode(';', $employment->content) as $bullet)
               <li>{{ $bullet }}</li>
@@ -161,7 +173,7 @@
               $urlAria="Nothing to click here";
             @endphp
         @endif
-        <a href="{{$project->$urlTest}}}}" aria-label="{{$urlAria}}"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a href="{{$urlTest}}" aria-label="{{$urlAria}}"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
       </div>
     @endforeach

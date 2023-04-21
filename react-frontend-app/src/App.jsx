@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Resume from "./components/Resume";
+import Education from "./components/Education";
+import Employment from "./components/Employment";
 import Project from "./components/Project";
 import "./App.css";
 
@@ -25,17 +26,43 @@ function App() {
         fetchData("employments", setEmployments);
     }, []);
 
+    //Resume section
+    //Employment data
+    let employmentsArray = [];
+    if (projects) {
+        for (let i = 0; i < employments.length; i++) {
+            employmentsArray.push(<Employment data={employments[i]} />);
+        }
+    }
+
+    //Education data
+    let educationArray = [];
+    if (education) {
+        for (let i = 0; i < education.length; i++) {
+            educationArray.push(<Education data={education[i]} />);
+        }
+    }
+
+    //Project data
+    let projectsArray = [];
+    if (projects) {
+        for (let i = 0; i < projects.length; i++) {
+            projectsArray.push(<Project data={projects[i]} />);
+        }
+    }
+
     return (
         <>
-            <div>
-                {education && employments && (
-                    <Resume
-                        employmentData={employments[0]}
-                        educationData={education[0]}
-                    />
-                )}
-            </div>
-            <div className="">{projects && <Project data={projects[0]} />}</div>
+            <section id="resume" className="resume=container">
+                {employmentsArray}
+                {educationArray}
+            </section>
+            <section id="projects" className="projects-container">
+                <h2 className="section-heading">Projects</h2>
+                <div className="projects-content-container">
+                    {projectsArray}
+                </div>
+            </section>
         </>
     );
 }

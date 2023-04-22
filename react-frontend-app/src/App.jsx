@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Education from "./components/Education";
 import Employment from "./components/Employment";
 import Project from "./components/Project";
@@ -53,6 +55,7 @@ function App() {
 
     return (
         <>
+            <Header />
             <section id="resume" className="resume=container">
                 <h2 className="section-heading">Resume</h2>
                 <div className="experience-container">
@@ -68,6 +71,7 @@ function App() {
                 <h2 className="section-heading">Projects</h2>
                 <div className="projects-content-container">{projectArray}</div>
             </section>
+            <Footer />
         </>
     );
 }

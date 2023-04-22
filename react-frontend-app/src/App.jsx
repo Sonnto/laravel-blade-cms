@@ -54,8 +54,15 @@ function App() {
     return (
         <>
             <section id="resume" className="resume=container">
-                {employmentArray}
-                {educationArray}
+                <h2 className="section-heading">Resume</h2>
+                <div className="experience-container">
+                    <h3 className="experience-type">Employment</h3>
+                    {employmentArray}
+                </div>
+                <div className="experience-container">
+                    <h3 className="experience-type">Education</h3>
+                    {educationArray}
+                </div>
             </section>
             <section id="projects" className="projects-container">
                 <h2 className="section-heading">Projects</h2>

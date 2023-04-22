@@ -1,3 +1,6 @@
+# Submission as Assignment
+Please note that the website when hosted will be here: 
+
 # Laravel CMS using Blade Views
 
 This repository is a copy of the simple [PHP/Laravel CMS](https://github.com/codeadamca/php-cms-laravel) except the CMS views have been converted from vanilla PHP to Blade.

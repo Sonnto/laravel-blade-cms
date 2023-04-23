@@ -38,12 +38,10 @@ function Project({ data }) {
                     aira-label="Click for Github repository"
                     rel="noopener"
                 >
-                    <i className="fa-solid fa=code">FAW</i>
+                    <i className="fa-solid fa-code"></i>
                 </a>
                 <a href={urlTest} aria-label={urlAria}>
-                    <i className="fa-solid fa-arrow-up-right-from-square">
-                        FAW
-                    </i>
+                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
             </div>
         </>

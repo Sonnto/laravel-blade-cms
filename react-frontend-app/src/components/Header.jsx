@@ -13,10 +13,19 @@ function Header() {
                             <a href="#home">Home</a>
                         </li>
                         <li>
+                            <hr class="nav-division" />
+                        </li>
+                        <li>
                             <a href="#about">About</a>
                         </li>
                         <li>
+                            <hr class="nav-division" />
+                        </li>
+                        <li>
                             <a href="#resume">Resume</a>
+                        </li>
+                        <li>
+                            <hr class="nav-division" />
                         </li>
                         <li>
                             <a href="#projects">Projects</a>

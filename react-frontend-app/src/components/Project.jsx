@@ -28,21 +28,23 @@ function Project({ data }) {
                 ) : (
                     <p>[ This project does not have a preview ]</p>
                 )}
-            </div>
-            <h3 className="project-name">{data.title}</h3>
-            <div className="project-description"></div>
-            <div className="project-media-icon">
-                {console.log(data.url)}
-                <a
-                    href={data.url}
-                    aira-label="Click for Github repository"
-                    rel="noopener"
-                >
-                    <i className="fa-solid fa-code"></i>
-                </a>
-                <a href={urlTest} aria-label={urlAria}>
-                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
+                <h3 className="project-name">{data.title}</h3>
+                <div className="project-description">
+                    <p>{data.content}</p>
+                </div>
+                <div className="project-media-icon">
+                    {console.log(data.url)}
+                    <a
+                        href={data.url}
+                        aira-label="Click for Github repository"
+                        rel="noopener"
+                    >
+                        <i className="fa-solid fa-code"></i>
+                    </a>
+                    <a href={urlTest} aria-label={urlAria}>
+                        <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
             </div>
         </>
     );

@@ -66,7 +66,7 @@ function App() {
                 <About />
             </section>
             <hr id="division" />
-            <section id="resume" className="resume=container">
+            <section id="resume" className="resume-container">
                 <h2 className="section-heading">Resume</h2>
                 <div className="experience-container">
                     <h3 className="experience-type">Employment</h3>

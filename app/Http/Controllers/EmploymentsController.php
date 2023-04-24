@@ -46,7 +46,6 @@ class EmploymentsController extends Controller
         $employment->started_at = $attributes['started_at'];
         $employment->ended_at = $attributes['ended_at'];
         $employment->content = $attributes['content'];
-        $employment->user_id = Auth::user()->id;
         $employment->save();
 
         return redirect('/console/employments/list')

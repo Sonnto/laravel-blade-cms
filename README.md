@@ -1,5 +1,5 @@
-# Submission as Assignment
-Please note that the website when hosted will be here: 
+# Submission Information
+Please note the hosted domain is: anthonykfho.com and the CMS login is: admin.anthonykfho.com
 
 # Laravel CMS using Blade Views
 

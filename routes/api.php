@@ -51,7 +51,7 @@ Route::get('/projects', function(){
 });
 
 Route::get('/education', function(){
-    $education = Education::orderByRaw("CASE WHEN ended_at IS NULL THEN 0 ELSE 1 END")
+    $education = Education::orderByRaw("CASE WHEN ended_at IS NULL THEN 1 ELSE 0 END")
                     ->orderBy('ended_at', 'desc')
                     ->orderBy('started_at', 'desc')
                     ->get();
@@ -61,7 +61,7 @@ Route::get('/education', function(){
 
 
 Route::get('/employments', function(){
-    $employments = Employment::orderByRaw("CASE WHEN ended_at IS NULL THEN 0 ELSE 1 END")
+    $employments = Employment::orderByRaw("CASE WHEN ended_at IS NULL THEN 1 ELSE 0 END")
                     ->orderBy('ended_at', 'desc')
                     ->orderBy('started_at', 'desc')
                     ->get();

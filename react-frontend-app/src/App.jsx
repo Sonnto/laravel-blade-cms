@@ -16,7 +16,7 @@ function App() {
     useEffect(() => {
         const fetchData = async (api, setter) => {
             try {
-                const url = `http://localhost:8888/api/${api}`;
+                const url = `https://localhost:8888/api/${api}`;
                 const res = await fetch(url);
                 const json = await res.json();
                 setter(json);

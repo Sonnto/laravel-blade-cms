@@ -1,9 +1,5 @@
 function Project({ data }) {
     //Split image to get url
-    let imageUrl = require(`../../../public/storage/projects/${
-        data.image.split("projects/")[1]
-    }`);
-    //
     let urlTest = "";
     let urlAria = "";
     if (data.urlTest) {
@@ -20,7 +16,7 @@ function Project({ data }) {
                     <div className="project-preview">
                         {console.log(data.image)}
                         <img
-                            src={imageUrl}
+                            src={data.image}
                             width="800px"
                             alt={`Preview of ${data.title}.`}
                         />

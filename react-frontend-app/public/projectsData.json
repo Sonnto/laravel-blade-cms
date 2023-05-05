@@ -1,56 +1,58 @@
-[
-    {
-        "id": 1,
-        "title": "Personal Website",
-        "url": "https://github.com/Sonnto/personal-website",
-        "urlTest": "https://anthonykfho.com/",
-        "slug": "personal-website",
-        "image": "http://admin.anthonykfho.comstorage/projects/Ew1xqzUMneEZoz29LlmBPpRWdpkxdFN1lBUTHX1a.png",
-        "content": "As a software developer, it is imperative to not only explain what your capabilities are but to also showcase them. Therefore, what better way to do that than to build my own website from the ground up? That is exactly what I did instead of relying on any of the quick-to-launch site builder platforms out there. It was designed to be minimalist and direct. The website includes a number of sections that highlights my background, skills, and experience, as well as a portfolio section that showcases my projects. By developing my own website, it allows me to keep costs low, hone my programming skills, implement my own design, and update its content with haste and ease. My website follows a mobile-first design and is built using <strong>Laravel</strong>, <strong>Blade</strong>, and <strong>PHP</strong> for the CMS back-end and <strong>HTML</strong>, <strong>CSS</strong>, and <strong>React.js</strong> for the front-end."
-    },
-    {
-        "id": 2,
-        "title": "COVID Report App",
-        "url": "https://github.com/Sonnto/covid-report-app",
-        "urlTest": null,
-        "slug": "covid-report-app",
-        "image": "http://admin.anthonykfho.comstorage/projects/ota3U82jOeYzBknv7wMhaxQhaHExWtPtQUKg7CXj.png",
-        "content": "The COVID-19 Report Repository is a web application that allows users to view and compare COVID-19 statistics for different regions and territories around the world. The project utilizes two <strong>RESTful APIs</strong>, the COVID-19 API and the Google Mapbox API, to fetch and display data on a visually appealing interface. Users can select a country or region from a dropdown menu, and if available, select a specific territory within that region to view COVID-19 statistics such as confirmed cases, deaths, and recoveries. Built with <strong>Node.js</strong>, <strong>Express.js</strong>, <strong>Pug</strong>, and <strong>JavaScript</strong>, this application provides users with up-to-date information on the COVID-19 pandemic in a simple and easy-to-use manner."
-    },
-    {
-        "id": 3,
-        "title": "Tales of Kinis Sonnto",
-        "url": "https://github.com/Sonnto/tales-of-kinis-sonnto",
-        "urlTest": "https://anthonykfho.com/projects/tales-of-kinis-sonnto/index.html",
-        "slug": "tales-of-kinis-sonnto",
-        "image": "http://admin.anthonykfho.comstorage/projects/geFpXBycT8CQMU21DM0BNz1CELZV504zPaAYHsCO.png",
-        "content": "\"May the Force be with you.\" Ever since I saw <i>Star Wars: Attack of the Clones</i> on TV as a kid, I became a huge fan of <i>Star Wars</i>, so much so that I had written stories on my free time in the past. By applying my passion for coding, I was able to bring one of these stories to life in a form of a text-adventure game. It features a unique story and characters, and the player's choices affect the outcome of the game. The game made use of <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. The bulk of the story was written in <strong>JavaScript Object Notation</strong> format; it presented a great opportunity for me to strengthen my knowledge of manipulating the <strong>HTML</strong> document through the <strong>Document Object Model</strong> and practice <strong>object-oriented programming</strong>."
-    },
-    {
-        "id": 4,
-        "title": "<i>Star Wars</i> Title Crawl",
-        "url": "https://github.com/Sonnto/star-wars-title-crawl",
-        "urlTest": "https://anthonykho.com/projects/star-wars-title-crawl",
-        "slug": "star-wars-title-crawl",
-        "image": "http://admin.anthonykfho.comstorage/projects/qjmoAufDTszm1vlvO0fuKRhQWdjOVC7OyGsET1kw.png",
-        "content": "This project is the culmination of my love of <i>Star Wars</i> and my love of coding. Complete with music, all the texts and the <i>Star Wars</i> logo was animated with <strong>CSS</strong>. The starry background will look different every time due to the stars being randomly generated with <strong>JavaScript</strong>. The project was an opportunity to familiarize and demonstrate my knowledge of <strong>CSS keyframe animations</strong>. It was a fun and engaging project that showcases the power of front-end development."
-    },
-    {
-        "id": 5,
-        "title": "Anime Tracker",
-        "url": "https://github.com/Sonnto/anime-tracker",
-        "urlTest": null,
-        "slug": "anime-tracker",
-        "image": "http://admin.anthonykfho.comstorage/projects/MpiDl0oh8QUbQZAgJf57YwrxEUAmjK4j9pMvW9eN.jpg",
-        "content": "The Anime Tracker is a web application designed for tracking the progress of anime series. With <strong>C#</strong> and the <strong>ASP.NET framework</strong>, one is able to add new Anime into the database, include details such as total episodes, ratings, genres, and more. The <strong>MySQL</strong> database features both <strong>one-to-many</strong> and <strong>many-to-many</strong> relationships between tables. The user is able to associate and disassociate genres with their anime as well as locate anime according to the anime format (TV Series, Movies, OVAs/Specials) and genre. It was great practice for me to build an MVP of a full-stack web application."
-    },
-    {
-        "id": 6,
-        "title": "School Database",
-        "url": "https://github.com/Sonnto/http-5112-assignment3-cumulative1",
-        "urlTest": null,
-        "slug": "school-database",
-        "image": "http://admin.anthonykfho.comstorage/projects/u62nYtb2g5KdMLsPm39MNco0B5tx5nFgQsCERBsF.png",
-        "content": "Through <strong>MAMP</strong>, this full-stack project is a minimum viable product of a web app that houses data of fictional teachers who work at a fictional school. It features the ability to create a new teacher record, a search function to find and display data from the <strong>MySQL</strong> database, update information of a teacher (such as date of employment, salary, etc.), and delete a teacher's record - all with <strong>SQL</strong> queries. This project allowed me to learn and practice how to build a fully functional web app with <strong>C#</strong> that was capable of <strong>C.R.U.D.</strong> and apply <strong>input sanitization</strong> to protect against <strong>SQL injection attacks</strong>. The database was created via <strong>phpMyAdmin</strong> and the web app used the <strong>ASP.NET framework</strong>. It also made use of <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>."
-    }
-]
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Personal Website",
+            "url": "https://github.com/Sonnto/personal-website",
+            "urlTest": "https://anthonykfho.com/",
+            "slug": "personal-website",
+            "image": "./assets/images/personal-website-preview.png",
+            "content": "As a software developer, it is imperative to not only explain what your capabilities are but to also showcase them. Therefore, what better way to do that than to build my own website from the ground up? That is exactly what I did instead of relying on any of the quick-to-launch site builder platforms out there. It was designed to be minimalist and direct. The website includes a number of sections that highlights my background, skills, and experience, as well as a portfolio section that showcases my projects. By developing my own website, it allows me to keep costs low, hone my programming skills, implement my own design, and update its content with haste and ease. My website follows a mobile-first design and is built using <strong>Laravel</strong>, <strong>Blade</strong>, and <strong>PHP</strong> for the CMS back-end and <strong>HTML</strong>, <strong>CSS</strong>, and <strong>React.js</strong> for the front-end."
+        },
+        {
+            "id": 2,
+            "title": "COVID Report App",
+            "url": "https://github.com/Sonnto/covid-report-app",
+            "urlTest": null,
+            "slug": "covid-report-app",
+            "image": "./assets/images/covid-report-app-preview.png",
+            "content": "The COVID-19 Report Repository is a web application that allows users to view and compare COVID-19 statistics for different regions and territories around the world. The project utilizes two <strong>RESTful APIs</strong>, the COVID-19 API and the Google Mapbox API, to fetch and display data on a visually appealing interface. Users can select a country or region from a dropdown menu, and if available, select a specific territory within that region to view COVID-19 statistics such as confirmed cases, deaths, and recoveries. Built with <strong>Node.js</strong>, <strong>Express.js</strong>, <strong>Pug</strong>, and <strong>JavaScript</strong>, this application provides users with up-to-date information on the COVID-19 pandemic in a simple and easy-to-use manner."
+        },
+        {
+            "id": 3,
+            "title": "Tales of Kinis Sonnto",
+            "url": "https://github.com/Sonnto/tales-of-kinis-sonnto",
+            "urlTest": "https://anthonykfho.com/projects/tales-of-kinis-sonnto/index.html",
+            "slug": "tales-of-kinis-sonnto",
+            "image": "./assets/images/tales-of-kinis-sonnto-preview.png",
+            "content": "\"May the Force be with you.\" Ever since I saw <i>Star Wars: Attack of the Clones</i> on TV as a kid, I became a huge fan of <i>Star Wars</i>, so much so that I had written stories on my free time in the past. By applying my passion for coding, I was able to bring one of these stories to life in a form of a text-adventure game. It features a unique story and characters, and the player's choices affect the outcome of the game. The game made use of <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. The bulk of the story was written in <strong>JavaScript Object Notation</strong> format; it presented a great opportunity for me to strengthen my knowledge of manipulating the <strong>HTML</strong> document through the <strong>Document Object Model</strong> and practice <strong>object-oriented programming</strong>."
+        },
+        {
+            "id": 4,
+            "title": "<i>Star Wars</i> Title Crawl",
+            "url": "https://github.com/Sonnto/star-wars-title-crawl",
+            "urlTest": "https://anthonykho.com/projects/star-wars-title-crawl",
+            "slug": "star-wars-title-crawl",
+            "image": "./assets/images/star-wars-title-crawl-preview.png",
+            "content": "This project is the culmination of my love of <i>Star Wars</i> and my love of coding. Complete with music, all the texts and the <i>Star Wars</i> logo was animated with <strong>CSS</strong>. The starry background will look different every time due to the stars being randomly generated with <strong>JavaScript</strong>. The project was an opportunity to familiarize and demonstrate my knowledge of <strong>CSS keyframe animations</strong>. It was a fun and engaging project that showcases the power of front-end development."
+        },
+        {
+            "id": 5,
+            "title": "Anime Tracker",
+            "url": "https://github.com/Sonnto/anime-tracker",
+            "urlTest": null,
+            "slug": "anime-tracker",
+            "image": "./assets/images/anime-tracker-preview.jpeg",
+            "content": "The Anime Tracker is a web application designed for tracking the progress of anime series. With <strong>C#</strong> and the <strong>ASP.NET framework</strong>, one is able to add new Anime into the database, include details such as total episodes, ratings, genres, and more. The <strong>MySQL</strong> database features both <strong>one-to-many</strong> and <strong>many-to-many</strong> relationships between tables. The user is able to associate and disassociate genres with their anime as well as locate anime according to the anime format (TV Series, Movies, OVAs/Specials) and genre. It was great practice for me to build an MVP of a full-stack web application."
+        },
+        {
+            "id": 6,
+            "title": "School Database",
+            "url": "https://github.com/Sonnto/http-5112-assignment3-cumulative1",
+            "urlTest": null,
+            "slug": "school-database",
+            "image": "./assets/images/school-database-preview.png",
+            "content": "Through <strong>MAMP</strong>, this full-stack project is a minimum viable product of a web app that houses data of fictional teachers who work at a fictional school. It features the ability to create a new teacher record, a search function to find and display data from the <strong>MySQL</strong> database, update information of a teacher (such as date of employment, salary, etc.), and delete a teacher's record - all with <strong>SQL</strong> queries. This project allowed me to learn and practice how to build a fully functional web app with <strong>C#</strong> that was capable of <strong>C.R.U.D.</strong> and apply <strong>input sanitization</strong> to protect against <strong>SQL injection attacks</strong>. The database was created via <strong>phpMyAdmin</strong> and the web app used the <strong>ASP.NET framework</strong>. It also made use of <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>."
+        }
+    ]
+}

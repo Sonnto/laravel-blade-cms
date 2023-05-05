@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "institute": "University of Toronto",
+        "qualification": "Honours Bachelor of Arts (Soc. Sci.)",
+        "location": "Toronto, ON",
+        "started_at": "2012-09-03 04:00:00",
+        "ended_at": "2016-04-15 04:00:00",
+        "content": "Double major, Political Science and History"
+    },
+    {
+        "id": 2,
+        "institute": "Seneca College",
+        "qualification": "Ontario College Diploma",
+        "location": "Toronto, ON",
+        "started_at": "2017-05-08 04:00:00",
+        "ended_at": "2018-06-15 04:00:00",
+        "content": "Paralegal (Accelerated);Granted Alternative Dispute Resolution Certificate"
+    },
+    {
+        "id": 3,
+        "institute": "Humber College",
+        "qualification": "Ontario College Graduate Certificate",
+        "location": "Toronto, ON",
+        "started_at": "2022-09-06 04:00:00",
+        "ended_at": null,
+        "content": "Web Development;Build responsive mobile-first personal website with HTML, CSS;Create JavaScript text-adventure game adhering to object-oriented programming principles;Practice creating functional full-stack web apps with C#, ASP.NET;Experience coding projects with other languages, frameworks, tools such as MongoDB, Express.js, React.js, Node.js, PHP, jQuery, mySQL"
+    }
+]

@@ -1,20 +1,13 @@
-[
-    {
-        "id": 1,
-        "title": "Intelligence Analyst (Volunteer)",
-        "employer": "Strike Source",
-        "location": "Columbus, OH",
-        "started_at": "2021-03-08 05:00:00",
-        "ended_at": null,
-        "content": "Spearhead production of OSINT-backed intelligence reports and articles to counter disinformation while working with a wide range of stakeholders in the military, intelligence, law enforcement, activist, and media communities"
-    },
-    {
-        "id": 2,
-        "title": "Litigation Paralegal",
-        "employer": "Zarnett Law Professional Corporation",
-        "location": "Toronto, ON",
-        "started_at": "2021-04-06 04:00:00",
-        "ended_at": "2022-08-26 04:00:00",
-        "content": "Collaborate with industry-leading clients and stakeholders in the residential real estate sector;Counsel over ten clients daily on their legal matters regarding responsibilities to tenants under the <i>Residential Tenancies Act</i>;Analyze case law, video evidence, witness statements, and other forms of disclosure to prepare for hearings on multiple files;Advocate on behalf of clients on a handful of hearings to negotiate favourable settlements with tenants and opposing counsel during mediation and hearings"
-    }
-]
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Litigation Paralegal",
+            "employer": "Zarnett Law Professional Corporation",
+            "location": "Toronto, ON",
+            "started_at": "2021-04-06 04:00:00",
+            "ended_at": "2022-08-26 04:00:00",
+            "content": "Collaborate with industry-leading clients and stakeholders in the residential real estate sector;Counsel over ten clients daily on their legal matters regarding responsibilities to tenants under the <i>Residential Tenancies Act</i>;Analyze case law, video evidence, witness statements, and other forms of disclosure to prepare for hearings on multiple files;Advocate on behalf of clients on a handful of hearings to negotiate favourable settlements with tenants and opposing counsel during mediation and hearings"
+        }
+    ]
+}

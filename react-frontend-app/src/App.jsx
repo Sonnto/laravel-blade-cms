@@ -14,15 +14,17 @@ function App() {
     const [employments, setEmployments] = useState(null);
 
     useEffect(() => {
-        const fetchData = async (api, setter) => {
+        const fetchData = async (type, setter) => {
             try {
-                const url = `https://localhost:8888/api/${api}`;
-                const res = await fetch(url);
+                // const url = "";
+                const res = await fetch(`./${type}Data.json`);
                 const json = await res.json();
                 setter(json);
                 console.log(json);
+                console.log("test success");
             } catch (error) {
                 console.log(error);
+                console.log("test error");
             }
         };
         fetchData("employments", setEmployments);
@@ -33,25 +35,29 @@ function App() {
     //Resume section
     //Employment data
     let employmentArray = [];
-    if (projects) {
-        for (let i = 0; i < employments.length; i++) {
-            employmentArray.push(<Employment data={employments[i]} />);
+    if (employments) {
+        for (let i = 0; i < employments.data.length; i++) {
+            employmentArray.push(<Employment data={employments.data[i]} />);
         }
     }
 
     //Education data
     let educationArray = [];
     if (education) {
-        for (let i = 0; i < education.length; i++) {
-            educationArray.push(<Education data={education[i]} />);
+        // console.log(education);
+        // console.log("hello");
+        for (let i = 0; i < education.data.length; i++) {
+            console.log("In here");
+            educationArray.push(<Education data={education.data[i]} />);
+            console.log(education.data);
         }
     }
 
-    //Project data
+    // Project data
     let projectArray = [];
     if (projects) {
-        for (let i = 0; i < projects.length; i++) {
-            projectArray.push(<Project data={projects[i]} />);
+        for (let i = 0; i < projects.data.length; i++) {
+            projectArray.push(<Project data={projects.data[i]} />);
         }
     }
 

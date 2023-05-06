@@ -14,7 +14,6 @@ function Project({ data }) {
             <div className="project-card-item">
                 {data.image ? (
                     <div className="project-preview">
-                        {console.log(data.image)}
                         <img
                             src={data.image}
                             width="800px"
@@ -29,7 +28,6 @@ function Project({ data }) {
                     <p>{data.content}</p>
                 </div>
                 <div className="project-media-icon">
-                    {console.log(data.url)}
                     <a
                         href={data.url}
                         aira-label="Click for Github repository"

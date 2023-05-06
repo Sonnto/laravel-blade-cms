@@ -20,8 +20,6 @@ function App() {
                 const res = await fetch(`./${type}Data.json`);
                 const json = await res.json();
                 setter(json);
-                console.log(json);
-                console.log("test success");
             } catch (error) {
                 console.log(error);
                 console.log("test error");
@@ -44,12 +42,8 @@ function App() {
     //Education data
     let educationArray = [];
     if (education) {
-        // console.log(education);
-        // console.log("hello");
         for (let i = 0; i < education.data.length; i++) {
-            console.log("In here");
             educationArray.push(<Education data={education.data[i]} />);
-            console.log(education.data);
         }
     }
 

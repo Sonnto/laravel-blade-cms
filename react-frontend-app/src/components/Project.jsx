@@ -24,9 +24,16 @@ function Project({ data }) {
                     <p>[ This project does not have a preview ]</p>
                 )}
                 <h3 className="project-name">{data.title}</h3>
-                <div className="project-description">
-                    <p>{data.content}</p>
+                {/* <div className="project-description"> */}
+                <div className="tools-container">
+                    {/* <p>{data.content}</p> */}
+                    {data.tools.split(";").map((tool, index) => (
+                        <div className="tools" key={index}>
+                            {tool}
+                        </div>
+                    ))}
                 </div>
+                {/* </div> */}
                 <div className="project-media-icon">
                     <a
                         href={data.url}

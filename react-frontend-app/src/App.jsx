@@ -65,6 +65,7 @@ function App() {
             <section id="about" className="about-container">
                 <About />
             </section>
+
             <hr id="division" />
             <section id="resume" className="resume-container">
                 <h2 className="section-heading">Resume</h2>
@@ -77,6 +78,7 @@ function App() {
                     {educationArray}
                 </div>
             </section>
+
             <hr id="division" />
             <section id="projects" className="projects-container">
                 <h2 className="section-heading">Projects</h2>

@@ -1,4 +1,8 @@
 function About() {
+    const handleResumeClick = () => {
+        window.open("./assets/documents/CV_HoKeeFungAnthony.pdf", "_blank");
+    };
+
     return (
         <>
             <div className="bio-text-wrapper">
@@ -20,20 +24,17 @@ function About() {
                         </h2>
                         <div className="bio">
                             <p>
-                                Based in the heart of Toronto, Canada, I am a
-                                full-stack developer with a passion for building
-                                responsive and innovative digital products that
-                                solve real-world problems. With a background in
-                                law, I have transitioned into the dynamic world
-                                of software development. I have designed and
-                                developed efficient, scalable, and
-                                high-performance projects with a variety of
-                                languages, frameworks, and tools including
-                                JavaScript, C#, ASP.NET, MongoDB, PHP, and
-                                Node.js. I am always looking to stay ahead of
-                                the curve and keep up-to-date with the latest
-                                trends and technologies to bring innovative
-                                solutions to the challenges of tomorrow.
+                                I am a full-stack developer with legal and
+                                political training, specializing in crafting
+                                responsive and innovative digital solutions to
+                                address real-world problems. I have achieved
+                                success in designing and developing efficient,
+                                scalable, and high-performance projects by
+                                leveraging a wide range of languages,
+                                frameworks, and tools. By staying updated with
+                                the latest trends and technologies, I
+                                continuously strive to bring cutting-edge
+                                solutions to future challenges.
                             </p>
                         </div>
                         <div className="contact-info">
@@ -56,6 +57,14 @@ function About() {
                                 >
                                     &nbsp;&nbsp;&nbsp;+1 (647) 588-4334
                                 </a>
+                            </p>
+                            <p>
+                                <button
+                                    className="resume-button"
+                                    onClick={handleResumeClick}
+                                >
+                                    View Resume
+                                </button>
                             </p>
                         </div>
                     </div>

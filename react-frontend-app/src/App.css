@@ -316,6 +316,27 @@ a:active i {
     padding: 0 3px; /* center the mobile icon under the envelope icon */
 }
 
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #423e37;
+    color: #fbf9ff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #cadbee;
+}
+
+.resume-button:active {
+    background-color: #aba8a8;
+}
+
 /* ==================== RESUME ==================== */
 
 .resume-container {
@@ -350,7 +371,6 @@ a:active i {
     flex-flow: row wrap;
     gap: 24px;
     margin: 24px;
-    justify-content: center;
 }
 
 /* === PROJECT ITEM CARDS === */
@@ -375,7 +395,7 @@ a:active i {
     border-radius: 20px;
     margin: 16px;
 }
-
+/*
 .project-description {
     font-family: "Mulish";
     font-weight: 200;
@@ -387,6 +407,28 @@ a:active i {
 
 .project-description p {
     margin: 0;
+}
+*/
+.tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Mulish";
+    font-weight: 200;
+    gap: 16px;
+    margin: 16px 24px;
+    font-size: 16px;
+    cursor: default;
+}
+
+.tools {
+    padding: 5px 10px;
+    background-color: #423e37;
+    color: #fbf9ff;
+    border: none;
+    border-radius: 8px;
 }
 
 .project-media-icon {
@@ -520,7 +562,8 @@ a:active i {
         margin: 32px;
     }
 
-    .project-description {
+    .project-description,
+    .tools-container {
         margin: 28px 40px;
         line-height: 36px;
         font-size: 20px;
@@ -550,7 +593,7 @@ a:active i {
     #resume,
     #projects {
         max-width: 1440px;
-        /* margin: auto; */
+        margin: auto;
     }
 
     /* ==================== DESKTOP 1025px MENU ==================== */
@@ -606,7 +649,7 @@ a:active i {
     /* ==================== DESKTOP 1025px RESUME ==================== */
 
     .resume-container {
-        margin: 0 58px;
+        margin: 0 58px !important;
     }
 
     /* ==================== DESKTOP 1025px PROJECTS ==================== */

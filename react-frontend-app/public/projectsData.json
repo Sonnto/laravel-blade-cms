@@ -7,7 +7,8 @@
             "urlTest": "https://anthonykfho.com/",
             "slug": "personal-website",
             "image": "./assets/images/personal-website-preview.png",
-            "content": "My personal website was designed to be minimalist and direct. The website includes a number of sections that highlights my background, skills, and experience, as well as a portfolio section that showcases my projects. By developing my own website, it allows me to keep costs low, hone my programming skills, implement my own design, and update its content with haste and ease. My website follows a mobile-first design and is built using Laravel, Blade, and PHP for the CMS back-end and HTML, CSS, and React.js for the front-end."
+            "content": "This project elegantly showcases my diverse expertise, creative projects, and professional accomplishments. The website provides a seamless user experience with its sleek design and intuitive navigation.",
+            "tools": "CSS;HTML;React.js"
         },
         {
             "id": 2,
@@ -16,43 +17,58 @@
             "urlTest": "https://ecommerce-website-anthonykfho.vercel.app",
             "slug": "ecommerce-website",
             "image": "./assets/images/ecommerce-website-preview.png",
-            "content": "An MVP e-commerce website inspired by the designs of Amazon. The user can see a list of products for sale that is drawn from the Fake Store. The user can create an order by selecting those products into a shopping cart, view their cart, add more or remove products, and purchase their item via Stripe. The project utilizes React.js, Redux, Next.js, Tailwind CSS, NextAuth.js, Firebase, Fake Store API, and Stripe API."
+            "content": "This MVP e-commerce website draws inspiration from Amazon's familiar design, allowing users to browse and purchase products. With features such as product listing, shopping cart management, secure payment integration using Stripe, and technologies including NextAuth.js and Redux, it offers a comprehensive and seamless shopping experience.",
+            "tools": "Firebase;Next.js;React.js;Tailwind"
         },
         {
             "id": 3,
+            "title": "BrickMMO: Pixelate",
+            "url": "https://github.com/Sonnto/p2p",
+            "urlTest": null,
+            "slug": "brickmmo-pixelate",
+            "image": "./assets/images/brickmmo-pixelate-preview.png",
+            "content": "Powered by COVID-19 Statistics and Google Maps, this web application fetches and displays up-to-date COVID-19 data for different regions worldwide. With a user-friendly interface, one can select a jurisdiction from dropdown menus, view specific data like confirmed cases, deaths, and recoveries, and stay informed about the virus.",
+            "tools": "Express.js;MongoDB;MySql;Node.js;React.js;;"
+        },
+        {
+            "id": 4,
             "title": "COVID Report App",
             "url": "https://github.com/Sonnto/covid-report-app",
             "urlTest": null,
             "slug": "covid-report-app",
             "image": "./assets/images/covid-report-app-preview.png",
-            "content": "The COVID-19 Report Repository is a web application that allows users to view and compare COVID-19 statistics for different regions and territories around the world. The project utilizes two RESTful APIs, the COVID-19 API and the Google Mapbox API, to fetch and display data on a visually appealing interface. Users can select a country or region from a dropdown menu and, if available, select a specific territory within that region to view COVID-19 statistics such as confirmed cases, deaths, and recoveries. Built with Node.js, Express.js, Pug, and JavaScript, this application provides users with up-to-date information on the COVID-19 pandemic in a simple and easy-to-use manner."
+            "content": "Powered by COVID-19 Statistics and Google Maps, this web application fetches and displays up-to-date COVID-19 data for different regions worldwide. With a user-friendly interface, one can select a jurisdiction from dropdown menus, view specific data like confirmed cases, deaths, and recoveries, and stay informed about the virus.",
+            "tools": "Express.js;JavaScript;Node.js;Pug"
         },
         {
-            "id": 4,
-            "title": "Tales of Kinis Sonnto",
+            "id": 5,
+            "title": "Text Adventure Game",
             "url": "https://github.com/Sonnto/tales-of-kinis-sonnto",
             "urlTest": "https://tales-of-kinis-sonnto.vercel.app/",
             "slug": "tales-of-kinis-sonnto",
             "image": "./assets/images/tales-of-kinis-sonnto-preview.png",
-            "content": "\"May the Force be with you.\" Ever since I saw Star Wars: Attack of the Clones on TV as a kid, I became a huge fan of Star Wars, so much so that I had written stories on my free time in the past. By applying my passion for coding, I was able to bring one of these stories to life in a form of a text-adventure game. It features a unique story and characters, and the player's choices affect the outcome of the game. The game made use of HTML, CSS, and JavaScript. The bulk of the story was written in JavaScript Object Notation format; it presented a great opportunity for me to strengthen my knowledge of manipulating the HTML document through the Document Object Model and practice object-oriented programming."
+            "content": "Inspired by my deep love for Star Wars since childhood, I transformed one of my written stories into an immersive text-adventure game. Through the power of coding, I brought unique characters and a captivating storyline to life, where player choices directly influence the game's outcome. May the Force continue to guide my coding endeavors.",
+            "tools": "CSS;HTML;JavaScript"
         },
         {
-            "id": 5,
+            "id": 6,
             "title": "Star Wars Title Crawl",
             "url": "https://github.com/Sonnto/star-wars-title-crawl",
             "urlTest": "https://star-wars-title-crawl.vercel.app/",
             "slug": "star-wars-title-crawl",
             "image": "./assets/images/star-wars-title-crawl-preview.png",
-            "content": "This project is the culmination of my love of Star Wars and my love of coding. Complete with music, all the texts and the Star Wars logo was animated with CSS. The starry background will look different every time due to the stars being randomly generated with JavaScript. The project was an opportunity to familiarize and demonstrate my knowledge of CSS keyframe animations. It was a fun and engaging project that showcases the power of front-end development."
+            "content": "With animated text, a CSS-animated Star Wars logo, and a dynamically generated starry background, the project beautifully merges visuals and interactivity. Through CSS keyframe animations, I demonstrated my proficiency while creating a fun and engaging experience that highlights the captivating possibilities of front-end development.",
+            "tools": "CSS;HTML;JavaScript"
         },
         {
-            "id": 6,
+            "id": 7,
             "title": "Anime Tracker",
             "url": "https://github.com/Sonnto/anime-tracker",
             "urlTest": null,
             "slug": "anime-tracker",
             "image": "./assets/images/anime-tracker-preview.jpeg",
-            "content": "The Anime Tracker is a web application designed for tracking the progress of anime series. With C# and the ASP.NET framework, one is able to add new Anime into the database, include details such as total episodes, ratings, genres, and more. The MySQL database features both one-to-many and many-to-many relationships between tables. The user is able to associate and disassociate genres with their anime as well as locate anime according to the anime format (TV Series, Movies, OVAs/Specials) and genre. It was great practice for me to build an MVP of a full-stack web application."
+            "content": "This comprehensive web application allows users to effortlessly track the progress of their favourite anime series. With a MySQL database featuring efficient one-to-many and many-to-many relationships, users can add new anime, input details like total episodes, ratings, and genres, and easily locate anime based on production format and genre.",
+            "tools": "ASP.NET;C#;MySQL"
         }
     ]
 }

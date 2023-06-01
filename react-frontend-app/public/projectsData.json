@@ -28,7 +28,7 @@
             "slug": "brickmmo-pixelate",
             "image": "./assets/images/brickmmo-pixelate-preview.png",
             "content": "Powered by COVID-19 Statistics and Google Maps, this web application fetches and displays up-to-date COVID-19 data for different regions worldwide. With a user-friendly interface, one can select a jurisdiction from dropdown menus, view specific data like confirmed cases, deaths, and recoveries, and stay informed about the virus.",
-            "tools": "Express.js;MongoDB;MySql;Node.js;React.js;;"
+            "tools": "Express.js;MongoDB;Node.js;React.js"
         },
         {
             "id": 4,
@@ -42,12 +42,12 @@
         },
         {
             "id": 5,
-            "title": "Text Adventure Game",
+            "title": "Visual Novel Game",
             "url": "https://github.com/Sonnto/tales-of-kinis-sonnto",
             "urlTest": "https://tales-of-kinis-sonnto.vercel.app/",
             "slug": "tales-of-kinis-sonnto",
             "image": "./assets/images/tales-of-kinis-sonnto-preview.png",
-            "content": "Inspired by my deep love for Star Wars since childhood, I transformed one of my written stories into an immersive text-adventure game. Through the power of coding, I brought unique characters and a captivating storyline to life, where player choices directly influence the game's outcome. May the Force continue to guide my coding endeavors.",
+            "content": "Inspired by my deep love for Star Wars since childhood, I transformed one of my written stories into an immersive visual novel game. Through the power of coding, I brought unique characters and a captivating storyline to life, where player choices directly influence the game's outcome. May the Force continue to guide my coding endeavors.",
             "tools": "CSS;HTML;JavaScript"
         },
         {

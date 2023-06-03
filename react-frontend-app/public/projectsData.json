@@ -1,74 +1,74 @@
 {
-    "data": [
-        {
-            "id": 1,
-            "title": "Personal Website",
-            "url": "https://github.com/Sonnto/personal-website",
-            "urlTest": "https://anthonykfho.com/",
-            "slug": "personal-website",
-            "image": "./assets/images/personal-website-preview.png",
-            "content": "This project elegantly showcases my diverse expertise, creative projects, and professional accomplishments. The website provides a seamless user experience with its sleek design and intuitive navigation.",
-            "tools": "CSS;HTML;React.js"
-        },
-        {
-            "id": 2,
-            "title": "E-Commerce Store",
-            "url": "https://github.com/Sonnto/ecommerce-website",
-            "urlTest": "https://ecommerce-website-anthonykfho.vercel.app",
-            "slug": "ecommerce-website",
-            "image": "./assets/images/ecommerce-website-preview.png",
-            "content": "This MVP e-commerce website draws inspiration from Amazon's familiar design, allowing users to browse and purchase products. With features such as product listing, shopping cart management, secure payment integration using Stripe, and technologies including NextAuth.js and Redux, it offers a comprehensive and seamless shopping experience.",
-            "tools": "Firebase;Next.js;React.js;Tailwind"
-        },
-        {
-            "id": 3,
-            "title": "BrickMMO: Pixelate",
-            "url": "https://github.com/Sonnto/p2p",
-            "urlTest": null,
-            "slug": "brickmmo-pixelate",
-            "image": "./assets/images/brickmmo-pixelate-preview.png",
-            "content": "Powered by COVID-19 Statistics and Google Maps, this web application fetches and displays up-to-date COVID-19 data for different regions worldwide. With a user-friendly interface, one can select a jurisdiction from dropdown menus, view specific data like confirmed cases, deaths, and recoveries, and stay informed about the virus.",
-            "tools": "Express.js;MongoDB;Node.js;React.js"
-        },
-        {
-            "id": 4,
-            "title": "COVID Report App",
-            "url": "https://github.com/Sonnto/covid-report-app",
-            "urlTest": null,
-            "slug": "covid-report-app",
-            "image": "./assets/images/covid-report-app-preview.png",
-            "content": "Powered by COVID-19 Statistics and Google Maps, this web application fetches and displays up-to-date COVID-19 data for different regions worldwide. With a user-friendly interface, one can select a jurisdiction from dropdown menus, view specific data like confirmed cases, deaths, and recoveries, and stay informed about the virus.",
-            "tools": "Express.js;JavaScript;Node.js;Pug"
-        },
-        {
-            "id": 5,
-            "title": "Visual Novel Game",
-            "url": "https://github.com/Sonnto/tales-of-kinis-sonnto",
-            "urlTest": "https://tales-of-kinis-sonnto.vercel.app/",
-            "slug": "tales-of-kinis-sonnto",
-            "image": "./assets/images/tales-of-kinis-sonnto-preview.png",
-            "content": "Inspired by my deep love for Star Wars since childhood, I transformed one of my written stories into an immersive visual novel game. Through the power of coding, I brought unique characters and a captivating storyline to life, where player choices directly influence the game's outcome. May the Force continue to guide my coding endeavors.",
-            "tools": "CSS;HTML;JavaScript"
-        },
-        {
-            "id": 6,
-            "title": "Star Wars Title Crawl",
-            "url": "https://github.com/Sonnto/star-wars-title-crawl",
-            "urlTest": "https://star-wars-title-crawl.vercel.app/",
-            "slug": "star-wars-title-crawl",
-            "image": "./assets/images/star-wars-title-crawl-preview.png",
-            "content": "With animated text, a CSS-animated Star Wars logo, and a dynamically generated starry background, the project beautifully merges visuals and interactivity. Through CSS keyframe animations, I demonstrated my proficiency while creating a fun and engaging experience that highlights the captivating possibilities of front-end development.",
-            "tools": "CSS;HTML;JavaScript"
-        },
-        {
-            "id": 7,
-            "title": "Anime Tracker",
-            "url": "https://github.com/Sonnto/anime-tracker",
-            "urlTest": null,
-            "slug": "anime-tracker",
-            "image": "./assets/images/anime-tracker-preview.jpeg",
-            "content": "This comprehensive web application allows users to effortlessly track the progress of their favourite anime series. With a MySQL database featuring efficient one-to-many and many-to-many relationships, users can add new anime, input details like total episodes, ratings, and genres, and easily locate anime based on production format and genre.",
-            "tools": "ASP.NET;C#;MySQL"
-        }
-    ]
+  "data": [
+    {
+      "id": 1,
+      "title": "Personal Website",
+      "url": "https://github.com/Sonnto/personal-website",
+      "urlTest": "https://anthonykfho.com/",
+      "slug": "personal-website",
+      "image": "./assets/images/personal-website-preview.png",
+      "content": "This project elegantly showcases my diverse expertise, creative projects, and professional accomplishments. The website provides a seamless user experience with its sleek design and intuitive navigation.",
+      "tools": "CSS;HTML;React.js"
+    },
+    {
+      "id": 2,
+      "title": "E-Commerce Store",
+      "url": "https://github.com/Sonnto/ecommerce-website",
+      "urlTest": "https://ecommerce-website-anthonykfho.vercel.app",
+      "slug": "ecommerce-website",
+      "image": "./assets/images/ecommerce-website-preview.png",
+      "content": "This MVP e-commerce website draws inspiration from Amazon's familiar design, allowing users to browse and purchase products. With features such as product listing, shopping cart management, secure payment integration using Stripe, and technologies including NextAuth.js and Redux, it offers a comprehensive and seamless shopping experience.",
+      "tools": "Firebase;Next.js;React.js;Tailwind"
+    },
+    {
+      "id": 3,
+      "title": "BrickMMO: Pixelate",
+      "url": "https://github.com/Sonnto/p2p",
+      "urlTest": null,
+      "slug": "brickmmo-pixelate",
+      "image": "./assets/images/brickmmo-pixelate-preview.png",
+      "content": "Powered by COVID-19 Statistics and Google Maps, this web application fetches and displays up-to-date COVID-19 data for different regions worldwide. With a user-friendly interface, one can select a jurisdiction from dropdown menus, view specific data like confirmed cases, deaths, and recoveries, and stay informed about the virus.",
+      "tools": "Express.js;MongoDB;Node.js;React.js"
+    },
+    {
+      "id": 4,
+      "title": "COVID Report App",
+      "url": "https://github.com/Sonnto/covid-report-app",
+      "urlTest": null,
+      "slug": "covid-report-app",
+      "image": "./assets/images/covid-report-app-preview.png",
+      "content": "Powered by COVID-19 Statistics and Google Maps, this web application fetches and displays up-to-date COVID-19 data for different regions worldwide. With a user-friendly interface, one can select a jurisdiction from dropdown menus, view specific data like confirmed cases, deaths, and recoveries, and stay informed about the virus.",
+      "tools": "Express.js;JavaScript;Node.js;Pug"
+    },
+    {
+      "id": 5,
+      "title": "Visual Novel Game",
+      "url": "https://github.com/Sonnto/tales-of-kinis-sonnto",
+      "urlTest": "https://tales-of-kinis-sonnto.vercel.app/",
+      "slug": "tales-of-kinis-sonnto",
+      "image": "./assets/images/tales-of-kinis-sonnto-preview.png",
+      "content": "Inspired by my deep love for Star Wars since childhood, I transformed one of my written stories into an immersive visual novel game. Through the power of coding, I brought unique characters and a captivating storyline to life, where player choices directly influence the game's outcome. May the Force continue to guide my coding endeavors.",
+      "tools": "CSS;HTML;JavaScript"
+    },
+    {
+      "id": 6,
+      "title": "Star Wars Title Crawl",
+      "url": "https://github.com/Sonnto/star-wars-title-crawl",
+      "urlTest": "https://star-wars-title-crawl.vercel.app/",
+      "slug": "star-wars-title-crawl",
+      "image": "./assets/images/star-wars-title-crawl-preview.png",
+      "content": "With animated text, a CSS-animated Star Wars logo, and a dynamically generated starry background, the project beautifully merges visuals and interactivity. Through CSS keyframe animations, I demonstrated my proficiency while creating a fun and engaging experience that highlights the captivating possibilities of front-end development.",
+      "tools": "CSS;HTML;JavaScript"
+    },
+    {
+      "id": 7,
+      "title": "Anime Tracker",
+      "url": "https://github.com/Sonnto/anime-tracker",
+      "urlTest": null,
+      "slug": "anime-tracker",
+      "image": "./assets/images/anime-tracker-preview.jpeg",
+      "content": "This comprehensive web application allows users to effortlessly track the progress of their favourite anime series. With a MySQL database featuring efficient one-to-many and many-to-many relationships, users can add new anime, input details like total episodes, ratings, and genres, and easily locate anime based on production format and genre.",
+      "tools": "ASP.NET;C#;MySQL"
+    }
+  ]
 }
